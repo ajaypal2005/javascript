@@ -228,7 +228,24 @@ console.log("repeat", "Hello ".repeat(3));
 console.log("match", str.match(/o/g));
 console.log("search", str.search("World"));
 
-// document object model(DOM)
+// document object model(DOM){ is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects. That way, programming languages can interact with the page.}
+ console.dir(document);  // to see the properties of document object
+ console.log(document.domain);
+ console.log(document.URL);
+ console.log(document.title);
+ document.title = "new title";
+//  getElementById { method returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get a reference to a specific element quickly.}
+ console.log(document.getElementById("myId"));
+//  getElementsByClassName { method returns a live HTMLCollection of elements with the specified class name. This collection is automatically updated when the document changes.}
+ console.log(document.getElementsByClassName("myClass"));
+//  getElementsByTagName { method returns a live HTMLCollection of elements with the specified tag name. This collection is automatically updated when the document changes.}
+ console.log(document.getElementsByTagName("div"));
+//  querySelector { method returns the first Element within the document that matches the specified selector, or group of selectors. If no matches are found, null is returned.}
+ console.log(document.querySelector(".myClass"));
+//  querySelectorAll { method returns a static NodeList of all elements that match the specified selector, or group of selectors.}
+ console.log(document.querySelectorAll("div"));
+
+
 // events
 // es6 features
 // json
